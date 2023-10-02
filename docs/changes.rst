@@ -1,14 +1,32 @@
 Changes
 =======
 
+Version 1.2.1
+-------------
+
+Released 2023-10-02
+
+- Fix a bug introduced with :pr:`556` where file validators were editing
+  the file fields content. :pr:`578`
+
+Version 1.2.0
+-------------
+
+Released 2023-10-01
+
+-   Add field ``MultipleFileField``. ``FileRequired``, ``FileAllowed``, ``FileSize``
+    now can be used to validate multiple files :pr:`556` :issue:`338`
+
 Version 1.1.2
 -------------
 
-Unreleased
+Released 2023-09-29
 
 -   Fixed Flask 2.3 deprecations of ``werkzeug.urls.url_encode`` and
     ``flask.Markup`` :pr:`565` :issue:`561`
 -   Stop support for python 3.7 :pr:`574`
+-   Use `pyproject.toml` instead of `setup.cfg` :pr:`576`
+-   Fixed nested blueprint CSRF exemption :pr:`572`
 
 Version 1.1.1
 -------------
